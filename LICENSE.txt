@@ -1,4 +1,4 @@
-Copyright (c) 2014 Tim Buchwaldt
+Copyright (c) 2014 TVRL GmbH
 
 MIT License
 

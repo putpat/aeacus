@@ -1,5 +1,3 @@
-require "aeacus/version"
+require 'aeacus/version'
 
-module Aeacus
-  # Your code goes here...
-end
+require 'aeacus/backtrace'
