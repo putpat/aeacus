@@ -11,7 +11,7 @@ module Aeacus
       # start gdb with our commands, attached to a given PID
       (1..5).each do |i|
         output = `gdb \`which ruby\` #{@pid} -x /tmp/gdb_commands | grep '^#'`
-        traces << `cat /tmp/stdout`
+        traces << `cat /tmp/stdout.#{@pid}`
         puts "--> Took trace #{i}/5"
 
         sleep 1
