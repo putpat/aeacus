@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+require 'net/smtp'
+
+from = ARGV[0]
+to = ARGV[1]
+server = ARGV[2]
+user = ARGV[3]
+password = ARGV[4]
+domain = ARGV[5]
+
+puts "From: #{from}"
+
+mailbody = "To: #{to}\n" +
+           "Subject: Aeacus Stacktrace\n" +
+           STDIN.read
+
+smtp = Net::SMTP.new(server, 25)
+smtp.start(domain, user, password, :login) do |mail|
+  mail.send_message mailbody, from, to
+end
