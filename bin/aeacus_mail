@@ -8,10 +8,8 @@ user = ARGV[3]
 password = ARGV[4]
 domain = ARGV[5]
 
-puts "From: #{from}"
-
 mailbody = "To: #{to}\n" +
-           "Subject: Aeacus Stacktrace\n" +
+           "Subject: Aeacus Stacktrace from #{`hostname`}\n" +
            STDIN.read
 
 smtp = Net::SMTP.new(server, 25)
