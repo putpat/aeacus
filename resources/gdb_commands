@@ -1,0 +1,5 @@
+p close(2)
+p creat("/tmp/stdout.PID",0600)
+call rb_backtrace()
+detach
+quit
