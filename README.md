@@ -1,24 +1,15 @@
 # Aeacus
 
-TODO: Write a gem description
+Aeacus, judge of the dead, tells you why your ruby processes died.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'aeacus'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install aeacus
+
 
 ## Usage
 
-TODO: Write usage instructions here
+WATCH OUT! This beast uses gdb to redirect stderr of your process and is potentially just kills it. We would suggest using it with process you will kill anyway, only.
 
 ## Contributing
 
