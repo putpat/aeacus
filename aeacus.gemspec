@@ -6,11 +6,11 @@ require 'aeacus/version'
 Gem::Specification.new do |spec|
   spec.name          = "aeacus"
   spec.version       = Aeacus::VERSION
-  spec.authors       = ["Tim Buchwaldt"]
-  spec.email         = ["tim@buchwaldt.ws"]
+  spec.authors       = ["Tim Buchwaldt", "Klaus Zanders"]
+  spec.email         = ["tim@buchwaldt.ws", "klaus.zanders@gmail.com"]
   spec.description   = "Aeacus, judge of the dead, tells you why your ruby processes died"
   spec.summary       = "Aeacus takes stacktraceses from detached ruby processes"
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/putpat/aeacus"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
