@@ -12,6 +12,7 @@ raise OptionParser::MissingArgument if pid.nil?
 
 $stdout.sync = true
 puts "--> Started aeacus"
+puts "--> Inspecting pid #{pid}"
 
 bt = Aeacus::Backtrace.new(pid)
 puts bt.take_traces.join("\n\n\n")
